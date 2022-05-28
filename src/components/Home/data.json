@@ -1,93 +1,413 @@
 [
     {
-        "id":0,
-        "image_url": "https://m.media-amazon.com/images/I/41XFo5AA1OL._US40_.jpg",
-        "title": "Black shoes",
-        "price": 5600,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[14, "male"]
-
+        "id": 0,
+        "image_url": "https://m.media-amazon.com/images/I/61n4jyp69IL._SL1500_.jpg",
+        "title": "PHILIPS BT1232/15 Beard Trimmer",
+        "price": 803,
+        "description": "Self-sharpening rounded tips for smooth contact with skin to protect against nicks and cuts. Stainless Steel Blades for long-lasting sharpness Easy to hold and use. Designed to help you trim those hard-to-reach areas.  ",
+        "tags": [-1, "male"]
     },
     {
-        "id":1,
-        "image_url": "https://m.media-amazon.com/images/I/411HCOpsk7L._SR38,50_.jpg",
-        "title": "Checked Shirt",
-        "price": 560,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[20, "male"]
+        "id": 1,
+        "image_url": "https://m.media-amazon.com/images/I/617WV3K81EL._SL1500_.jpg",
+        "title": "Philips BT3221/15 Beard Trimmer",
+        "price": 1891,
+        "description": "Easy to use with 20 different length settings - get a 3-day shadow look or a full beard. Simply turn the wheel to select and lock-in the length settings you want or remove the comb and get the zero trim look. ",
+        "tags": [-1, "male"]
     },
     {
-        "id":2,
-        "image_url": "https://m.media-amazon.com/images/I/512sw6gqBUL._SR38,50_.jpg",
-        "title": "Belt",
-        "price": 156,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[19, "male"]
+        "id": 2,
+        "image_url": "https://m.media-amazon.com/images/I/617pxqObT0L._SL1500_.jpg",
+        "title": "Philips MG5740/15 Multi Grooming Kit",
+        "price": 2420,
+        "description": "Enjoy maximum precision with DualCut technology, which includes 2x more blades. The steel blades lightly brush against one another - sharpening themselves as they work. This results in blades that are sharp as day 1 after 4 years of use. ",
+        "tags": [-1, "male"]
     },
     {
-        "id":3,
-        "image_url": "https://m.media-amazon.com/images/I/41CdJ4ei-uL._SS40_.jpg",
-        "title": "Brown Wallet",
-        "price": 699,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "male"]
+        "id": 3,
+        "image_url": "https://m.media-amazon.com/images/I/71tZtxBhOJL._SL1500_.jpg",
+        "title": "WildHorn Blue Hunter Leather Men's Wallet",
+        "price": 475,
+        "description": " It is typically a bi-fold wallet.It has 9 in-build card slots, 2 currency slots, 2 secret compartment, a coin pocket and 1 transparent windows for License or work ID of your driver. The most distinctive feature of this wallet is an inside zippered compartment which gives you ample space to keep important bills or notes ",
+        "tags": [20, "male"]
     },
     {
-        "id":4,
-        "image_url": "https://m.media-amazon.com/images/I/31tPL6m1ZLL._SS40_.jpg",
-        "title": "Deodrant",
-        "price": 699,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "male"]
+        "id": 4,
+        "image_url": "https://m.media-amazon.com/images/I/91Up6mkRhuL._SL1500_.jpg",
+        "title": "Urban Forest Oliver Leather Wallet for Men",
+        "price": 479,
+        "description": "Urban Forest Oliver Blue RFID Blocking Leather Wallet for Men",
+        "tags": [20, "male"]
     },
     {
-        "id":5,
-        "image_url": "https://m.media-amazon.com/images/I/51B9vEkOeSL._SS40_.jpg",
+        "id": 5,
+        "image_url": "https://m.media-amazon.com/images/I/71IJTYxAbdL._SL1500_.jpg",
+        "title": "NISUN 13 Pocket Leather Wallet",
+        "price": 599,
+        "description": "Perfect PU Leather Card Holder Wallet For Men, Including 13 pocket for cards + 1 Zipper Coin Pocket + 1 cash Pocket Snap Closure & Zipper Closure Design. Stylish professional & Compact Design ",
+        "tags": [20, "male","female"]
+    },
+    {
+        "id": 6,
+        "image_url": "https://m.media-amazon.com/images/I/41unfDMi6WL._UL1080_.jpg",
+        "title": "Cleardekho Anti Glare Computer Glasses",
+        "price": 499,
+        "description": "Notice the difference in days - With these computer glasses, you?ll start to notice better screen viewing and better clarity after just a few days of using them, ClearDekho Blue light protection computer glasses come up with different layers of protection which helps you to protect your eyes in your day to day life.  ",
+        "tags": [-1, "male","female"]
+    },
+    {
+        "id": 7,
+        "image_url": "https://m.media-amazon.com/images/I/61raRJF3xKL._UL1500_.jpg",
+        "title": "Peter Jones Square Anti Glare Reading Glasses",
+        "price": 438,
+        "description": "Protect your eyes from harmful light when you watch TV, look at computer, tablet, smartphone or other electronic devices Anti-fatigue radiation eye protection glasses, to protect you from headaches, fatigue, brain embolism, always protect your health ",
+        "tags": [-1, "male","female"]
+    },
+    {
+        "id": 8,
+        "image_url": "https://m.media-amazon.com/images/I/61p7SWuBMZL._UL1500_.jpg",
+        "title": "Royal Son Ultralight Spectacle ",
+        "price": 599,
+        "description": "These blue light blocking glasses are made of reinforced TR 90 frames, and durable metal hinges, all the details ensuring you a perfect performance. Reduce the burden on your bridge of the nose and create a new sense of fashion. (Transparent/Clear)",
+        "tags": [-1, "male","female"]
+    },
+    {
+        "id": 9,
+        "image_url": "https://m.media-amazon.com/images/I/515eaPvFcgL._UL1500_.jpg",
+        "title": "Fastrack Sunglasses Black",
+        "price": 639,
+        "description": "Size Map: Small ; Lens Material: Polycarbonate ; Front Material Detail: Plastic ; 17 mm Bridge Width Frame size :Lens Length = 16 cm,Width = 8.1 cm,Height = 5.6 cm ; Temple Design: Regular ; Lens Height Description: Narrow ",
+        "tags": [-1, "male"]
+    },
+    {
+        "id": 10,
+        "image_url": "https://m.media-amazon.com/images/I/51M7Nsxv7IL._UL1001_.jpg",
+        "title": " Tassel   Gradient UV400 Sunglasses",
+        "price": 599,
+        "description": "Metal made golden temples with hollow out design matching lights up the whole construction, not just for longer durability, but also goes perfect with the lens. Flexible hinge,more durable to use, provides a easy and smooth opening and close of the temples. Comfortable nose pad,more comfortable to wear. ",
+        "tags": [-1, "female"]
+    },
+    {
+        "id": 11,
+        "image_url": "https://m.media-amazon.com/images/I/81+mp9xI5PL._SL1500_.jpg",
+        "title": "WOW Skin Science Onion Hair Oil",
+        "price": 389,
+        "description": "Onion hair oil by WOW Skin Science is powered with Onion Black Seed Oil extract blended with Almond, Castor, Jojoba, Olive & Coconut Oils which promotes hair growth and controls hair fall. ",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 12,
+        "image_url": "https://m.media-amazon.com/images/I/61ERV2Jo6sL._SL1300_.jpg",
         "title": "Ustraa Beard Growth Oil",
-        "price": 800,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "male"]
+        "price": 319,
+        "description": "Moisturizes & Nourishes Beard 8- natural oils including Argan, Acai berry, Castor, Almond, Olive, Watermelon seed, Gooseberry and Avocado oils keep your beard healthy, nourished and well-groomed. ",
+        "tags": [20, "male"]
     },
     {
-        "id":6,
-        "image_url": "https://m.media-amazon.com/images/I/41t04ibtkxS._SS40_.jpg",
-        "title": "Trimmer",
-        "price": 1349,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "male"]
+        "id": 13,
+        "image_url": "https://m.media-amazon.com/images/I/41n0GneDiQL.jpg",
+        "title": "The Man Company Beard Oil",
+        "price": 259,
+        "description": "The Man Company Beard Oil for Growing Beard Faster with Almond & Thyme, 100% NATURAL, Best Beard Growth Oil for Men, Nourishes & Strengthens Uneven Patchy Beard - 30ML ",
+        "tags": [20, "male"]
     },
     {
-        "id":7,
-        "image_url": "https://m.media-amazon.com/images/I/51y1mc0qErL._US40_.jpg",
-        "title": "Red Purse",
-        "price": 1799,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "Female"]
+        "id": 14,
+        "image_url": "https://m.media-amazon.com/images/I/81G90NKpjfL._SL1500_.jpg",
+        "title": "Blooming Beauty Red Onion Oil",
+        "price": 389,
+        "description": "Blooming Beauty Red Onion Oil Black Seed, Aloe Vera, Neem Leaf, Green Tea and 16 Other Natural Extracts for Healthy Hair Growth and Hair Loss Control (100ml (Pack of 3)) ",
+        "tags": [-1, "female"]
     },
     {
-        "id":8,
-        "image_url": "https://m.media-amazon.com/images/I/31bV3X6lxUL._SS40_.jpg",
-        "title": "Hair Dryer",
+        "id": 15,
+        "image_url": "https://m.media-amazon.com/images/I/612ArMxOW+L._SL1500_.jpg",
+        "title": "Dabur Amla Hair Oil",
+        "price": 206,
+        "description": "Dabur Amla hair oil has amla extracts. Amla is known to be a power fruit for your hair. As the power of amla nourishes your scalp from within, your hair is strengthened from root to tip ",
+        "tags": [-1, "female"]
+    },
+    {
+        "id": 16,
+        "image_url": "https://m.media-amazon.com/images/I/517kgIob8ZL._SL1000_.jpg",
+        "title": "Indulekha Bringha Oil",
+        "price": 389,
+        "description": "Clinically Proven to Grow Hair in 4 months, Reduces Hair Fall Power of 11 Herbs & Essential Oil cooked under Natural Sunlight for 7 days. 100% Ayurvedic Oil, Recommended by Ayurvedic Experts. Product is Dermatologically tested. ",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 17,
+        "image_url": "https://m.media-amazon.com/images/I/61mNnwQnmbL._SL1200_.jpg",
+        "title": "Mamaearth Anti Hair Fall Spa Range",
+        "price": 822,
+        "description": "MAKES HAIR HEALTHY: Make way for healthy hair! The natural goodness of Onion, Redensyl, Almond Oil, and Keratin boosts hair health by increasing blood supply to hair follicles. It’s time to flaunt hair that’s thicker, fuller and carries more strength. ",
+        "tags": [-1, "female"]
+    },
+    {
+        "id": 18,
+        "image_url": "https://m.media-amazon.com/images/I/51acgVWheeL._SL1000_.jpg",
+        "title": "Vedix Ayurvedic Shampoo",
+        "price": 349,
+        "description": "Ayurvedic hair fall control shampoo for women: Reduces hair fall and hair breakage. Reconstructs hair from roots to tips, locking in moisture to make hair thick, shiny and voluminous. ",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 19,
+        "image_url": "https://m.media-amazon.com/images/I/61JSDGXUBES._SL1500_.jpg",
+        "title": "WOW Skin Science Onion Shampoo",
+        "price": 549,
+        "description": "Get strong and lustrous hair with wow skin science red onion black seed oil shampoo. This shampoo helps to revive your tired scalp and hair This red onion extract and black seed oil infused shampoo improves circulation to the scalp and roots",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 20,
+        "image_url": "https://m.media-amazon.com/images/I/61NcKl0IzEL._SL1500_.jpg",
+        "title": "Beardo Hair Fall Control Shampoo",
+        "price": 351,
+        "description": "Don't you want thicker, stronger, glossier, fuller hair? Use Beardo Hairfallcontrol shampoo to cleanse your crowning glory hair, then stimulate that growth with the Beardo growth oil and make that hair smoother with argan oil serum. Have a good hair day every day! ",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 21,
+        "image_url": "https://m.media-amazon.com/images/I/719Pta6fozL._SL1500_.jpg",
+        "title": "Park Avenue Beer shampoo",
+        "price": 369,
+        "description": "For healthy & bouncy hair. Container Type : Plastic Bottle 5 times conditioned hair Crafted with 100% Natural Beer. 0% Parabens Made with 100% Natural Beer. With the goodness of Barley & hops. Enriched with proteins and Vitamin B. 0% Parabens " ,
+        "tags": [20, "male"]
+    },
+    {
+        "id": 22,
+        "image_url": "https://m.media-amazon.com/images/I/71Qoariyb9L._SL1500_.jpg",
+        "title": "Head & Shoulders , Anti Dandruff Shampoo",
+        "price": 196,
+        "description": "Up to 100 percent dandruff free (visible flakes with regular use); Shot of menthol which revitalises you and makes you feel fresh ,Hair Type: All Hair Types ,Usage: Shake before use. Wet hair. Gently massage onto scalp. Lather and rinse thoroughly. Repeat if desired ",
+        "tags": [-1, "male","female"]
+    },
+    {
+        "id": 23,
+        "image_url": "https://m.media-amazon.com/images/I/51+oUJcotSL._SL1000_.jpg",
+        "title": "Garnier Fructis Shampoo",
+        "price": 192,
+        "description": "Long and strong fortifying shampoo ,Garnier Fructis long and strong shampoo strengthens the hair fibre from within and smoothens the hair from root to tip ,The citric acid within this product has high levels of vitamin C giving your hair an instant pick-me-up ",
+        "tags": [20, "male","female"]
+    },
+    {
+        "id": 24,
+        "image_url": "https://m.media-amazon.com/images/I/81mzy6ihj-L._UL1500_.jpg",
+        "title": "LORENZ Analogue Men's Watch ",
+        "price": 2530,
+        "description": "Watch And Sunglasses Combo Is Suitable For Every Occasion (Outdoor, Business, Party Etc), Also A Great Gift Option For Friends And Family, Luxury Simple Design Watch And Wayfarer Sunglasses, This Combo Is A Perfect Gift Option For Men",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 25,
+        "image_url": "https://m.media-amazon.com/images/I/71Kx6rgmlRS._UL1500_.jpg",
+        "title": "TIMEX Analog Men's Watch",
+        "price": 1299,
+        "description": "When it comes to a well-made watch, every detail matters. Crafted with brushed and plated stainless-steel cases, the Timex collections are available with adjustable stainless steel bracelets or carefully stitched leather straps. Ideal for birthday, anniversary and wedding gift",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 26,
+        "image_url": "https://m.media-amazon.com/images/I/51bJSYeOF1S._UL1100_.jpg",
+        "title": "Goldenize Fashion Digital Watch",
+        "price": 279,
+        "description": "Both the watches of this stylish combo are designed to wear at gym, sports, or paty. From parties to festivals and from casual outings to gym, the watch gels up well. It is also a great gift option. ",
+        "tags": [-1, "male","female"]
+    },
+    {
+        "id": 27,
+        "image_url": "https://m.media-amazon.com/images/I/61cyyP5RfcL._UL1500_.jpg",
+        "title": "Titan Karishma Analog Watch ",
+        "price": 1745,
+        "description": "Time for dazzling silver! Titan Karishma collection features this sunray finished silver dial accompanied beautifully by the classic silver metallic strap, all enclosed carefully in a round metal case. The watch comes with gloss finished steel case and shows the time with metal applique indices placed at five-minute intervals and three plain hands. ",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 28,
+        "image_url": "https://m.media-amazon.com/images/I/71WFlzi4ELL._UL1500_.jpg",
+        "title": "TIMEX Analog Women's Watch",
+        "price": 2716,
+        "description": "When it comes to a well-made watch, every detail matters. Crafted with brushed and plated stainless-steel cases, the Timex collections are available with adjustable stainless steel bracelets or carefully stitched leather straps. ",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 29,
+        "image_url": "https://m.media-amazon.com/images/I/81mjWhAKrJL._UL1500_.jpg",
+        "title": "Sonata Analog Gold Dial Women's Watch",
+        "price": 1499,
+        "description": "Buy trusted Sonata watches backed by one year brand assurance. Sonata, being India's largest selling watch brand from the house of Tata, guarantees best in class after sales service through a network of service centers and customer care to address all your needs. ",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 30,
+        "image_url": "https://m.media-amazon.com/images/I/81eNprKPlZL._UL1500_.jpg",
+        "title": "TIMEWEAR Digital Men's Watch",
         "price": 699,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "Female"]
+        "description": "Watches are more than just technology. They're worn for their looks, but they also have a practical function. The right watch can convey your position in the world by acting as a personal statement. Combining impressive craftsmanship with a stylish aesthetic, watches are so much more than simple accessories ",
+        "tags": [-1, "male"]
     },
     {
-        
-        "id":9,
-        "image_url": "https://m.media-amazon.com/images/I/41MplXilepS._SS40_.jpg",
-        "title": "Professional Hair Dryer",
+        "id": 31,
+        "image_url": "https://m.media-amazon.com/images/I/81jv56HsVOL._UL1500_.jpg",
+        "title": "Urban Forest Leather Belt",
+        "price": 599,
+        "description": "Department: men Colour- Brown Material- leather ",
+        "tags": [-1, "male"]
+    },
+    {
+        "id": 32,
+        "image_url": "https://m.media-amazon.com/images/I/71PWQ1b8LHL._UL1500_.jpg",
+        "title": "VOGARD Men's Artificial Leather Belt",
+        "price": 599,
+        "description": "Material Made From Full Grain Vegan Synthetic Leather (Pu-Leather). Handcrafted For Those Who Do Not Like Animal Leather Products. Complemented With A Stylish Scratch Resistant Buckle That Is Elegantly Designed With Class. ",
+        "tags": [-1, "male"]
+    },
+    {
+        "id": 33,
+        "image_url": "https://m.media-amazon.com/images/I/51B2oJ0ewFL._UL1024_.jpg",
+        "title": "PALAY Ladies Elastic Belt ",
+        "price": 458,
+        "description": "The belt without the annoying buckle. No bulge, no hassle. Fit well without buckle digging into your stomach. Elastic belt reduces the stress on the waist, not too tight after eating too much or too much drinking. Make the waist more relaxing.It is very soft and comfortable. Really relax your waist.  ",
+        "tags": [-1, "female"]
+    },
+    {
+        "id": 34,
+        "image_url": "https://m.media-amazon.com/images/I/41x1saFIEPL._UL1000_.jpg",
+        "title": "SATYAM Adjustable Waist Belts",
+        "price": 433,
+        "description": "dresses for women, saree, party wear dress for women, dresses for women western wear, dress, gifts for women, gifts for sister, gifts for mother, Gift For Friend, gown for women, frock for women, tops for women stylish latest, dress for girls, dress for women, gown for women party wear, long tops for women, long frocks for women, belt for women ",
+        "tags": [-1, "female"]
+    },
+    {
+        "id": 35,
+        "image_url": "https://m.media-amazon.com/images/I/71JXOfuAbxL._UL1500_.jpg",
+        "title": "Centrino Men's 3105 Formal Shoes",
         "price": 799,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "Female"]
-        
+        "description": "Closure: Pull On ,Closure: Pull On ,Outer Material: Synthetic ,Product Type: Men's Formal Shoes ,Toe Style: Closed Toe",
+        "tags": [-1, "male"]
     },
     {
-        "id":10,
-        "image_url": "https://m.media-amazon.com/images/I/41ZBDYVsNtL._SR38,50_.jpg",
-        "title": "Banarasi Saree",
+        "id": 36,
+        "image_url": "https://m.media-amazon.com/images/I/71IAZQAlDBL._UL1500_.jpg ",
+        "title": "Kraasa Men's Sports Shoe ",
+        "price": 532,
+        "description": "You'Ll Love This Grey Running And Walking Shoes It Features A Mesh Upper, Style For Easy Fit, Stylish Pvc Sole, Soft Lining, Cushiony Memory Foam Insole For Comfort And Support, And A Non-Marking Outsole. Manmade Materials ",
+        "tags": [-1, "male"]
+    },
+    {
+        "id": 37,
+        "image_url": "https://m.media-amazon.com/images/I/71GOUAnEevL._UL1500_.jpg",
+        "title": "Burwood 68 Leather Formal Shoes",
+        "price": 1049,
+        "description": " Sole: Thermoplastic Elastomers  ,Closure: Lace-Up, Shoe Width: Medium ,Outer Material: Leather ,Product Type: Men's Formal Shoes ,Toe Style: Round Toe ",
+        "tags": [14, "male","female"]
+    },
+    {
+        "id": 38,
+        "image_url": "https://m.media-amazon.com/images/I/81IYnKF8q6L._UL1500_.jpg",
+        "title": "Power Men's Lionel Running Shoes ",
+        "price": 909,
+        "description": " Closure: Lace-Up ,Shoe Width: Medium ,Material Type: Canvas ,Lifestyle: Special Needs ,Closure Type: Lace-Up ",
+        "tags": [-1, "male"]
+    },
+    {
+        "id": 39,
+        "image_url": "https://m.media-amazon.com/images/I/71JgTA6JO2L._UL1500_.jpg",
+        "title": "Campus Men's Running Shoes",
+        "price": 1699,
+        "description": " Sole: Phylon ,Closure: Lace-Up ,Shoe Width: Medium ,Material Type: Mesh ,Lifestyle: Sports ",
+        "tags": [-1, "male"]
+    },
+    {
+        "id": 40,
+        "image_url": "https://m.media-amazon.com/images/I/71vzQj6PpxL._UL1500_.jpg",
+        "title": "Ethics mens Live_at Sneaker",
+        "price": 411,
+        "description": " Sole: Polyvinyl Chloride ,Closure: Lace-Up ,Shoe Width: Medium ,Sole Material : Pvc; Color : Multicolor ,Closure Type : Lace Up; Toe Style: Closed T ,",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 41,
+        "image_url": "https://m.media-amazon.com/images/I/71SvHTbDymL._UL1500_.jpg",
+        "title": "Puma Women's Running Shoe",
+        "price": 1640,
+        "description": "  ,Sole: Rubber ,Closure: Lace-Up ,Shoe Width: Medium , Style Name:-Casual Shoe ,Model Name:- Kendall Wns ,Brand Color:-Foxglove-Puma Black ,Wipe with a clean dry cloth",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 42,
+        "image_url": "https://m.media-amazon.com/images/I/81L6VUuePaL._UL1500_.jpg",
+        "title": "Campus Women's Brownie Running Shoes",
+        "price": 1709,
+        "description": " Sole: Phylon ,Closure: Lace-Up ,Shoe Width: Medium ,Material Type: Mesh ,Lifestyle: Sports  ",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 43,
+        "image_url": "https://m.media-amazon.com/images/I/61myVMepwmL._UL1067_.jpg",
+        "title": "Sparx Women's Sl-164 Running Shoe",
+        "price": 1049,
+        "description": "  ,Sole: Ethylene Vinyl Acetate ,Closure: Lace-Up ,Shoe Width: Medium ,Material:MESH ,Lifestyle:Casual ,Heel Type:Flat ,",
+        "tags": [-1, "female"]
+    },
+    {
+        "id": 44,
+        "image_url": "https://m.media-amazon.com/images/I/61bDoqhvEPL._UL1500_.jpg",
+        "title": "Urbano Fashion Slim Fit Cotton T-Shirt",
+        "price": 429,
+        "description": " Care Instructions: Machine Wash ,Fit Type: Slim Fit ,Stylish & Trendy All-Over Printed Design ,100% Premium Cotton with Bio Wash - Feels so ,& comfortable ,Round Neck; Full Sleeve T-Shirt; Slim Fi ,Regular Length; Printed pattern ,Perfect for Casual, Evening, Holiday & Party Wear ",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 45,
+        "image_url": "https://m.media-amazon.com/images/I/51yIybqYFTL._UL1100_.jpg",
+        "title": "Dennis Lingo Casual Shirt",
+        "price": 1839,
+        "description": "Care Instructions: Machine Wash Fit Type: Slim Fit Color Name: Bottle Green 100% Cotton Long sleeve Slim fit Machine wash",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 46,
+        "image_url": "https://m.media-amazon.com/images/I/51++cxHDe6L._UL1500_.jpg",
+        "title": "Men's Cotton Blend Straight Kurta",
+        "price": 329,
+        "description": " A kurta is a loose collarless shirt worn in many regions of South Asia, and now also worn around the world. Cotton fabric is a type of natural cloth created out of the cotton plant fibres. Coming in a wide range of weaves, it is the most versatile and popular fabric in the world. It is so widespread that many people tend to perceive cotton as the fabric that has been around us for many centuries.  ",
+        "tags": [20, "male"]
+    },
+    {
+      
+        "id": 47,
+        "image_url": "https://m.media-amazon.com/images/I/61AhfjVtkpL._UL1500_.jpg",
+        "title": "Royal Kurta Short Casual Kurta",
         "price": 699,
-        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
-        "tags":[25, "Female", "Fashion"]
+        "description": "Collar: Mandarin Collar, Sleeves: Full, Fit type: Regular/ Comfort, Length: Mid Thigh length Kurta Style: Solid Short Kurta, Fabric: Cotton  ",
+        "tags": [20, "male"]
+    },
+    {
+        "id": 48,
+        "image_url": "https://m.media-amazon.com/images/I/61choxa9ALL._UL1500_.jpg",
+        "title": "JUGULAR Hop Casual T-Shirt ",
+        "price": 369,
+        "description": " Fit Type: Loose ",
+        "tags": [14, "male"]
+    },
+    {
+        "id": 49,
+        "image_url": "https://m.media-amazon.com/images/I/61Ree+7fLOL._UL1500_.jpg",
+        "title": "Rayon Mor Pankh Printed Anarkali Kurtis",
+        "price": 630,
+        "description": "Kurtis are perfect match for Party Wear, Wedding Wear, Ceremony, Festive Wear. ",
+        "tags": [20, "female"]
+    },
+    {
+        "id": 50,
+        "image_url": "https://m.media-amazon.com/images/I/81ZazTuriwL._UL1500_.jpg",
+        "title": "Royal Anarkali Gown",
+        "price": 2699,
+        "description": "Product Fabric Detail :- Top Fabric : Satin With Inner Side Fusing | Bottom : Santoon | : Nazmeen | Inner: Santoon  , Closure Type: Zipper; Sleeve Type: Long Sleeve ",
+        "tags": [20, "male"]
     }
+
+    
 ]
