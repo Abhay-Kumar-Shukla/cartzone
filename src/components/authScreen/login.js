@@ -1,10 +1,10 @@
+//Login Page
+
 import { React, useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
@@ -17,11 +17,10 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import { db, auth } from "../../services/firebase";
 import {
-  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import {useNavigate} from 'react-router-dom';
-
+//display copyright text
 function Copyright(props) {
   return (
     <Typography
@@ -39,7 +38,7 @@ function Copyright(props) {
     </Typography>
   );
 }
-
+// Main login logic
 export default function Login() {
   const [displayName, setdisplayName] = useState("");
   const [displayNameError, setdisplayNameError] = useState("");
@@ -53,12 +52,11 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-
+//login
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(event)
     const data = new FormData(event.currentTarget);
-    // alert('clicked');
     var em = data.get("email");
     var pp = data.get("password");
     setemail(em);
@@ -66,27 +64,7 @@ export default function Login() {
     logIn();
   };
 
-  function signInWithGoogle() {
-    const provider = auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider).then((userObj) => {
-      const userData = {
-        uid: userObj.user.uid,
-        displayName: userObj.user.displayName,
-        email: userObj.user.email,
-        friends: [],
-      };
-      db.collection("users")
-        .doc(userData.uid)
-        .get()
-        .then((userDoc) => {
-          if (!userDoc.exists) {
-            db.collection("users").doc(userObj.user.uid).set(userData);
-          }
-        })
-        .catch((err) => setfirebaseError(err.message));
-    });
-  }
-
+  //login details verification
   function logIn() {
     if (email === "") {
       setemailError("email can't be empty");
@@ -104,51 +82,7 @@ export default function Login() {
       .catch((err) => setfirebaseError(err.message));
   }
 
-  function signUp() {
-    setpasswordError("");
-    setemailError("");
-    setdisplayNameError("");
-
-    if (confirmPassword !== password) {
-      setpasswordError("password doesn't match");
-      return;
-    }
-    if (email === "") {
-      setemailError("email can't be empty");
-      return;
-    }
-    if (password === "") {
-      setpasswordError("password can't be empty");
-      return;
-    }
-    if (displayName === "") {
-      setdisplayNameError("display name can't be empty");
-      return;
-    }
-    auth
-      .createUserWithEmailAndPassword(email, password)
-      .then((userObj) => {
-        userObj.user.updateProfile({ displayName: displayName });
-        const userData = {
-          uid: userObj.user.uid,
-          displayName: displayName,
-          email: userObj.user.email,
-          friends: [],
-        };
-        db.collection("users")
-          .doc(userData.uid)
-          .get()
-          .then((userDoc) => {
-            if (!userDoc.exists) {
-              db.collection("users").doc(userObj.user.uid).set(userData);
-            }
-          });
-        navigate('/profile');  
-        userObj.user.sendEmailVerification();
-      })
-      .catch((err) => setfirebaseError(err.message));
-  }
-
+//Layout for login page
   return (
     <>
       <Grid container component="main" sx={{ height: "100vh" }}>
@@ -226,11 +160,6 @@ export default function Login() {
                 Sign In
               </Button>
               <Grid container>
-                {/* <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid> */}
                 <Grid item>
                   <Link href="signUp" variant="body2">
                     {"Don't have an account? Sign Up"}

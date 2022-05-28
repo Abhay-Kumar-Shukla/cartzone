@@ -1,9 +1,7 @@
 import { CircularProgress, Container, Typography, Grid } from "@mui/material";
 import {
-  collection,
   doc,
   getDoc,
-  getDocs,
   updateDoc,
 } from "firebase/firestore";
 import { useState } from "react";
@@ -45,7 +43,7 @@ let userdata = null;
 
 export default function Home(props) {
   const [_ud, set_ud] = useState(false);
-  
+  //fetch user data
   getDoc(doc(db, "users", props.user.uid)).then((docs) => {
     userdata = docs.data();
     if (userdata.firstTime) {
@@ -57,8 +55,8 @@ export default function Home(props) {
     }
     udata = userdata;
     set_ud(true);
-    // console.log(userdata);
-
+    
+// filter products based on user data
     const p = plist
       .filter(e => e.tags.includes(udata.faceAttributes.gender))
       .filter(e => {
@@ -70,19 +68,21 @@ export default function Home(props) {
       ;
     pdata = p;
   });
-  
+  //
   if (!_ud || !pdata) {
+    // loader
     return (
-      <Container maxWidth={ "sx" }>
+      <Container sx={{ width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <CircularProgress />
       </Container>
     );
   } else {
+    //display recommended list of products
     let list = [];
     pdata.forEach((doc, i) => {
       list.push(<Grid item key={i}><Card data={doc} /></Grid>);
     });
-
+//main page layout
     return (
       <div>
         <MenuAppBar />
@@ -119,6 +119,7 @@ export default function Home(props) {
           </Typography>
           
           <Grid container spacing={2} sx={{ justifyContent: "center", overflowX: "auto", paddingBottom: "2rem" }}>
+            {/* displaying 8 random products out of all products */}
             {plist.shuffle().slice(0, 8).map((e, i) => <Grid item key={i}><Card data={e} /></Grid>)}
           </Grid>
         </Container>

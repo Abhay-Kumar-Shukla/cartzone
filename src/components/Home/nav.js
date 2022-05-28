@@ -1,51 +1,47 @@
+//navbar
+
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../services/firebase';
 import plist from './data.json';
-import Icon from '@mui/material/Icon';
 import SearchIcon from '@mui/icons-material/Search';
 
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
 export default function MenuAppBar() {
+  // for checking authentication status
   const [auth1, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const navigate = useNavigate();
-
   const handleChange = (event) => {
     setAuth(event.target.checked);
   };
-
+//opens account menu
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
+// redirects to profile page
   const handleClose = () => {
     setAnchorEl(null);
     navigate('/profile')
   };
-
+//logout and returns to home
   const logout = () =>{
       signOut(auth)
       navigate('/')
       console.log("navigating to login")
   }
-
+//attaching functions to HTML
   return (
     <Box sx={{ flexGrow: 1, alignItems: "center", position: "relative", zIndex: "2000" }}>
       <AppBar position="static">

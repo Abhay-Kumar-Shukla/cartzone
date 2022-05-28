@@ -1,3 +1,5 @@
+//delivery advertisements
+
 import React from "react";
 import "./DeliveryAdd.css";
 import DeliveryAddImg from "../assets/ads/undraw_Deliveries_2r4y-removebg-preview 1.svg";

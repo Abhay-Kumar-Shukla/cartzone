@@ -1,10 +1,10 @@
+//Signup Page
+
 import { React, useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
@@ -18,11 +18,10 @@ import DialogContent from "@mui/material/DialogContent";
 import { db, auth } from "../../services/firebase";
 import {
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
 } from "firebase/auth";
 import { collection, doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-
+//display copyright
 function Copyright(props) {
   return (
     <Typography
@@ -40,7 +39,7 @@ function Copyright(props) {
     </Typography>
   );
 }
-
+//Main signup logic
 export default function SignUp() {
   const [displayName, setdisplayName] = useState("");
   const [displayNameError, setdisplayNameError] = useState("");
@@ -56,10 +55,7 @@ export default function SignUp() {
   const [firebaseError, setfirebaseError] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
-    //console.log(event.target);
-    //console.log(event.currentTarget, "ct")
     const data = new FormData(event.currentTarget);
-    //console.log(data)
     var em = data.get("email");
     var pp = data.get("password");
     var nm = data.get("name");
@@ -70,36 +66,10 @@ export default function SignUp() {
     signUp();
   };
 
-  function signInWithGoogle() {
-    const provider = auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider).then((userObj) => {
-      const userData = {
-        uid: userObj.user.uid,
-        displayName: userObj.user.displayName,
-        email: userObj.user.email,
-        friends: [],
-      };
-      collection(db, "users")
-        .doc(userData.uid)
-        .get()
-        .then((userDoc) => {
-          if (!userDoc.exists) {
-            collection("users").doc(userObj.user.uid).set(userData);
-          }
-        })
-        .catch((err) => setfirebaseError(err.message));
-    });
-  }
-
+  
+//signup details verification
   function signUp() {
-    // setpasswordError("");
-    // setEmailError("");
-    // setdisplayNameError("");
-
-    // if(confirmPassword != password){
-    //     setpasswordError("password doesn't match");
-    //     return;
-    // }
+    
     console.log(email, password, displayName, "l95")
     if (email === "") {
       setEmailError("email can't be empty");
@@ -123,11 +93,10 @@ export default function SignUp() {
         };
         setDoc(doc(db, "users", userObj.user.uid), userData);
         navigate('/profile')
-        //userObj.user.sendEmailVerification();
       })
       .catch((err) => setfirebaseError(err.message));
   }
-
+//Signup page layout
   return (
     <>
       <Grid container component="main" sx={{ height: "100vh" }}>
@@ -211,18 +180,7 @@ export default function SignUp() {
               >
                 Create Account
               </Button>
-              <Grid container>
-                {/* <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid> */}
-                <Grid item>
-                  {/* <Link href="signUp" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link> */}
-                </Grid>
-              </Grid>
+              
               <Copyright sx={{ mt: 5 }} />
             </Box>
           </Box>
@@ -234,6 +192,7 @@ export default function SignUp() {
         <DialogContent>
           <Typography>{firebaseError}</Typography>
         </DialogContent>
+        {/* show error message if any */}
         <DialogActions>
           <Button onClick={() => setfirebaseError("")}>Okay</Button>
         </DialogActions>

@@ -8,18 +8,17 @@ import Login from "./components/authScreen/login";
 import SignUp from "./components/authScreen/signUp";
 import { auth } from "./services/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import firebase from "firebase/compat/app";
 import CircularProgress from "@mui/material/CircularProgress";
 import Home from "./components/Home/home";
 import ImageUrl from "./components/faceRecScreen/ImageUrl";
-import Profsettings from "./components/Profile/profsettings";
 
+//it creates a theme with orange as the primary color
 const theme = createTheme({
 	palette: {
 		primary: orange,
 	}
 });
-
+//main app
 function App() {
   const [user, loading, error] = useAuthState(auth);
 
@@ -34,8 +33,11 @@ function App() {
           backgroundColor: "white",
         }}
       >
+        {/* cicular progress bar to show loading */}
         {" "}
-        <CircularProgress />
+        <ThemeProvider theme={theme}>
+          <CircularProgress />
+        </ThemeProvider>
       </div>
     );
   }

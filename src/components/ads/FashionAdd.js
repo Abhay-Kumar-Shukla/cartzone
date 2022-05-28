@@ -1,3 +1,5 @@
+//fashion advertisements
+
 import React from "react";
 import "./FashionAdd.css";
 

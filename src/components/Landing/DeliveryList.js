@@ -1,3 +1,4 @@
+// static data for delivery locations avilable
 import React from "react";
 import "./DeliveryList.css";
 const delivery_list = [
@@ -42,6 +43,7 @@ export default function DeliveryList() {
         <div className="deliverylist__list">
           <div className="deliverylist__list__col">
             <ul>
+              {/* converts every item in list to an element */}
               {delivery_list.map((item, i) => {
                 return <li key={i}> {item}</li>;
               })}

@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
-
+//firebase configuration credentials
 const firebaseConfig = {
   apiKey: "AIzaSyDX4gm3dF12jhQFzCR6ASlXd4dV5C_WRUQ",
   authDomain: "cartzone-24014.firebaseapp.com",

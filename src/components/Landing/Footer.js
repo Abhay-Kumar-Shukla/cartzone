@@ -1,3 +1,4 @@
+// for footer at bottom of page 
 import React from "react";
 import "./Footer.css";
 export default function Footer() {
@@ -5,7 +6,8 @@ export default function Footer() {
     <div className="footer">
       <div className="footer__container">
         <div className="footer__brand">
-          <h1><img src="./assets/logo.png" style={{ maxHeight: "150px" }} /></h1>
+          {/* attach logo to the footer */}
+          <h1><img src="./assets/logo.png" style={{ maxHeight: "150px" }} /></h1>   
           <p>Try before you buy</p>
         </div>
         <div className="footer__col">

@@ -1,3 +1,4 @@
+//image carousel at top of page below nav bar
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@mui/material";
@@ -17,7 +18,7 @@ function Item(props) {
         <img src={props.image} alt=""></img>
       </div>
     </Paper>
-    //add comment
+    //it is a container surface on which elements are rendered
   );
 }
 

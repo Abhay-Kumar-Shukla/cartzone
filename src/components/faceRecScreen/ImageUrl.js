@@ -1,8 +1,8 @@
+// displays webcam and takes photo
 import { faceApiForUrl, faceApiForUpload } from "../../services/FaceApi";
 import React, { useState, useEffect } from "react";
 import {
   ref,
-  uploadBytes,
   uploadString,
   getDownloadURL,
 } from "firebase/storage";
@@ -11,13 +11,13 @@ import Webcam from "react-webcam";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import MenuAppBar from "../Home/nav";
 import { Button } from "@mui/material";
-
+//defining webcam properties
 const videoConstraints = {
   width: 1600,
   height: 960,
   facingMode: "user",
 };
-
+// main function which handles logic behind sending webcam photo to server
 const ImageUrl = (props) => {
   const webcamRef = React.useRef(null);
   const userdata = props.user;
@@ -37,26 +37,11 @@ const ImageUrl = (props) => {
   const capture = React.useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
     setImage(imageSrc);
-    // console.log(imageSrc);
   });
 
-  const faceRectangleStyle = (item) => {
-    return {
-      position: "absolute",
-      top: `${item.faceRectangle.top}px`,
-      left: `${item.faceRectangle.left}px`,
-      width: `${item.faceRectangle.width}px`,
-      height: `${item.faceRectangle.height}px`,
-      border: "2px solid #BA0B93",
-      textAlign: "center",
-      color: "white",
-      fontSize: "20px",
-      fontWeight: "bold",
-    };
-  };
+//send data to server
   const handleSubmit = async () => {
     var imgurl = "";
-    // var imgname = auth.currentUser.email;
     var imgname = "test" + ".jpeg";
 
     var imgref = ref(storage, imgname);
@@ -73,6 +58,7 @@ const ImageUrl = (props) => {
 
     try {
       console.log(imageurl);
+      // send inage url to azure face api
       const response = await faceApiForUrl.post(`/face/v1.0/detect`, {
         url: imageurl,
       });
@@ -84,10 +70,12 @@ const ImageUrl = (props) => {
       window.alert("An error occurred", err);
     }
   };
+  //logic for going back
   const handleBack = () => {
     setOutputImage(false);
     setImage("");
   };
+  //HTML layout for webcam input
   return (
     <div>
       <MenuAppBar />
@@ -131,12 +119,10 @@ const ImageUrl = (props) => {
 
         </div>
       ) : (
-        <div>
+        <div style={{ display: "flex", flexFlow: "column nowrap", alignItems: "center", justifyContent: "center" }}>
           <img src={image} alt="output" />
           <br />
-          <button type="button" onClick={handleBack}>
-            BACK
-          </button>
+          <Button variant="contained" onClick={handleBack}>Back</Button>
         </div>
       )}
     </div>

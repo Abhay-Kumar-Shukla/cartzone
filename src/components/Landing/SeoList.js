@@ -1,3 +1,4 @@
+//static data for keyward for seo(search engine optimisation)
 import React from "react";
 import "./SeoList.css";
 export default function SeoList() {

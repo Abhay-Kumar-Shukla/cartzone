@@ -1,3 +1,5 @@
+//Social contact advertisement
+
 import React from "react";
 import "./SocialMediaAdd.css";
 export default function SocialMediaAdd() {
