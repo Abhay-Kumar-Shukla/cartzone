@@ -4,19 +4,41 @@
 
 .card-description {
   position: absolute;
-  z-index: 1000;
   top: 0;
+  right: 0;
+  z-index: 1000;
+  
+  overflow: hidden;
+  color: transparent;
 
-  overflow-y: auto;
-  height: 240px;
+  width: 60px;
+  height: 60px;
+  border-bottom-left-radius: 100%;
+  
   padding: 0.5rem;
-
-  /* border-bottom: 2px solid #121212; */
-
-  opacity: 0;
-  background-color: #fff;
-  transition: all 0.25s ease;
+  
+  background-color: #ff9800;
+  transition: all 0.25s ease, color 0.1s 0.25s ease;
 }
+
 .card-description:hover {
-  opacity: 1;
+  height: 240px;
+  width: calc(100% - 1rem);
+  overflow-y: auto;
+  border-radius: unset;
+  color: unset;
+}
+
+.card-info-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: #eee;
+  transition: all 0s 0.25s ease;
+}
+
+.card-description:hover .card-info-icon {
+  opacity: 0;
 }

@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import "./Card.css";
+import InfoIcon from '@mui/icons-material/Info';
 
 export default function ImgMediaCard(props) {
   const [open, setOpen] = React.useState(false);
@@ -25,6 +26,7 @@ export default function ImgMediaCard(props) {
       />
 
       <div className="card-description">
+        <InfoIcon className='card-info-icon'></InfoIcon>
         <Typography variant="h6">
           Description
         </Typography>
