@@ -1,0 +1,117 @@
+.footer {
+  background-color: #162d3b;
+  height: fit-content;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font--poppins);
+  color: white;
+  flex-direction: column;
+}
+.footer__container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__col__header {
+  color: #d4af37;
+  font-size: 1.3rem;
+}
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__col__content ul {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__col__content ul li {
+  margin: 5px 0;
+}
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__brand h1 {
+  font-size: 2rem;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contact ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__contact ul li i {
+  margin-right: 5px;
+}
+.footer__contact__social__icons {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+.footer__sub__footer {
+  border-top: 2px solid #d4af37;
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__sub__footer__terms__and__conditions ul {
+  display: flex;
+}
+.footer__sub__footer__terms__and__conditions ul li {
+  margin: 0 5px;
+}
+@media (max-width: 1120px) {
+  .footer__container {
+    width: 100%;
+    padding: 10px;
+  }
+  .footer__col__header {
+    font-size: 1rem;
+  }
+  .footer__container li {
+    font-size: 0.8rem;
+  }
+  .footer__brand h1 {
+    font-size: 1.5rem;
+  }
+  .footer__brand p {
+    font-size: 0.8rem;
+  }
+  .footer__sub__footer {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 900px) {
+  .footer__brand,
+  .footer__col {
+    display: none;
+  }
+  .footer {
+    height: fit-content;
+    padding: 20px 0;
+  }
+  .footer__container {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .footer__sub__footer {
+    font-size: 0.5rem;
+  }
+}

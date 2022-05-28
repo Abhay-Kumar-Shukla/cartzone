@@ -13,6 +13,11 @@ import MenuAppBar from "./nav";
 import plist from "./data.json";
 import HeroCarousel from "../Landing/HeroCarousel";
 import FashionAdd from "../ads/FashionAdd";
+import DeliveryAdd from "../ads/DeliveryAdd";
+import SocialMediaAdd from "../ads/SocialMediaAdd";
+import DeliveryList from "../Landing/DeliveryList";
+import SeoList from "../Landing/SeoList";
+import Footer from "../Landing/Footer";
 
 let udata = null;
 let pdata = null;
@@ -36,15 +41,17 @@ Array.prototype.shuffle = function shuffle() {
   return array;
 }
 
+let userdata = null;
+
 export default function Home(props) {
-  var userdata = {};
   const [_ud, set_ud] = useState(false);
+  
   getDoc(doc(db, "users", props.user.uid)).then((docs) => {
     userdata = docs.data();
     if (userdata.firstTime) {
       updateDoc(doc(db, "users", userdata.uid), { firstTime: false }).then(
         (fx) => {
-          window.location = "./products";
+          window.location = "./";
         }
       );
     }
@@ -53,18 +60,18 @@ export default function Home(props) {
     // console.log(userdata);
 
     const p = plist
-      .filter(e => e.tags[0] === udata.faceAttributes.gender)
+      .filter(e => e.tags.includes(udata.faceAttributes.gender))
       .filter(e => {
         const age = udata.faceAttributes.age;
-        const pAge = e.tags[1];
-
-        return age <= 18 && pAge <= 18 || age > 18 && pAge > 18 && age <= 50 && pAge <= 50 || age > 50 && pAge > 50 && age > 50 && pAge > 50;
+        const pAge = e.tags[0];
+  
+        return age === -1 ? true : (age <= 18 && pAge <= 18 || age > 18 && pAge > 18 && age <= 50 && pAge <= 50 || age > 50 && pAge > 50 && age > 50 && pAge > 50);
       })
       ;
     pdata = p;
   });
-
-  if (!_ud) {
+  
+  if (!_ud || !pdata) {
     return (
       <Container maxWidth={ "sx" }>
         <CircularProgress />
@@ -73,7 +80,7 @@ export default function Home(props) {
   } else {
     let list = [];
     pdata.forEach((doc, i) => {
-      list.push(<Card key={i} data={doc} />);
+      list.push(<Grid item key={i}><Card data={doc} /></Grid>);
     });
 
     return (
@@ -87,11 +94,12 @@ export default function Home(props) {
             variant="h4"
             style={{ marginBottom: "20px", textDecoration: "underline" }}
             gutterBottom
+            textAlign={"center"}
           >
             Recommended Products
           </Typography>
 
-          <Grid container>
+          <Grid container spacing={2} sx={{ overflowX: "auto", flexWrap: "nowrap", paddingBottom: "2rem" }}>
             {list}
           </Grid>
 
@@ -104,15 +112,24 @@ export default function Home(props) {
               textDecoration: "underline",
               marginTop: "50px",
             }}
-            gutterBottom
+            gutterBottom            
+            textAlign={"center"}
           >
             All Products
           </Typography>
           
-          <Grid container>
-            {plist.shuffle().map((e, i) => <Card key={i} data={e} />)}
+          <Grid container spacing={2} sx={{ overflowX: "auto", flexWrap: "nowrap", paddingBottom: "2rem" }}>
+            {plist.shuffle().map((e, i) => <Grid item key={i}><Card data={e} /></Grid>)}
           </Grid>
         </Container>
+
+        <SocialMediaAdd />
+
+        <DeliveryAdd />
+        <DeliveryList />
+        <SeoList />
+        <Footer />
+
       </div>
     );
   }

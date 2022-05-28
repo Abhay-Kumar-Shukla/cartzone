@@ -1,0 +1,26 @@
+.seolist {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.seolist__container {
+  width: 95%;
+}
+.seolist__header {
+  color: #0b0b45;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.seolist__container {
+  color: #565656;
+  font-size: 0.8rem;
+  text-align: start;
+}
+.seolist__row {
+  margin-bottom: 5px;
+}
+@media (max-width: 850px) {
+  .seolist {
+    display: none;
+  }
+}

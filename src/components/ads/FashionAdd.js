@@ -7,7 +7,7 @@ import women3 from "../assets/ads/image 5.png";
 
 export default function FashionAdd() {
   return (
-    <div className="fasionadd">
+    <div className="fasionadd" style={{ margin: "20px 0" }}>
       <div className="fasionadd__container">
         <div className="fasionadd__col__left">
           <div className="fasionadd__col__left__row__one">

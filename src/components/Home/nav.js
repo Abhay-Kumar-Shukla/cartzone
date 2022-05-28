@@ -4,6 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
@@ -14,6 +15,12 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../services/firebase';
+import plist from './data.json';
+import Icon from '@mui/material/Icon';
+import SearchIcon from '@mui/icons-material/Search';
+
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 
 export default function MenuAppBar() {
   const [auth1, setAuth] = React.useState(true);
@@ -40,21 +47,36 @@ export default function MenuAppBar() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }} style={{marginBottom:'2rem'}}>
+    <Box sx={{ flexGrow: 1, alignItems: "center", position: "relative", zIndex: "2000" }}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
-            onClick={() => {window.location.reload()}}
+            sx={{ borderRadius: "8px" }}
+            onClick={() => window.location = "/"}
           >
-            <img src="assets/logo.png" style={{ maxHeight: "100px" }} />
+            <img src="assets/logo.png" style={{ maxHeight: "50px" }} />
           </IconButton>
+
+          <div style={{ width: "50%", display: "flex", flexFlow: "row nowrap", alignItems: "center" }}>
+            <Autocomplete
+              freeSolo
+              fullWidth
+              sx={{ backgroundColor: "white", borderRadius: "4px" }}
+              options={plist.map((option) => option.title)}
+              renderInput={(params) => <TextField {...params} label="Type to search" />}
+            />
+            <IconButton>
+              <SearchIcon sx={{ fontSize: "2rem" }} />
+            </IconButton>
+          </div>
+
           {auth1 && (
             <div>
+              <Link href="#contact-socials" sx={{ color: "#eee" }}>Contact Us</Link>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -66,6 +88,7 @@ export default function MenuAppBar() {
                 <AccountCircle />
               </IconButton>
               <Menu
+                sx={{ zIndex: "5000" }}
                 id="menu-appbar"
                 anchorEl={anchorEl}
                 anchorOrigin={{

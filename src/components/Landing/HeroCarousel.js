@@ -53,7 +53,6 @@ export default function HeroCarousel() {
       {items.map((item, i) => (
         <Item key={i} image={item.img} alt="" />
       ))}
-      {/* it is iterating the elements in array 'items' */}
     </Carousel>
   );
 }

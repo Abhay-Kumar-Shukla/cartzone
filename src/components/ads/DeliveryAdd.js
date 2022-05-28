@@ -1,7 +1,7 @@
 import React from "react";
 import "./DeliveryAdd.css";
-import DeliveryAddImg from "../../../Assets/images/Prime Vogue Website Front/undraw_Deliveries_2r4y-removebg-preview 1.svg";
-import underLineCurve from "../../../Assets/images/Vector 12.svg";
+import DeliveryAddImg from "../assets/ads/undraw_Deliveries_2r4y-removebg-preview 1.svg";
+import underLineCurve from "../assets/ads/Vector 12.svg";
 export default function DeliveryAdd() {
   return (
     <div className="delivery__add">
@@ -15,7 +15,7 @@ export default function DeliveryAdd() {
               className="underline__img"
             />
 
-            <p>To enjoy instant delivery of EveryThing from Prime Vogue</p>
+            <p>To enjoy instant delivery of EveryThing from Cartzone</p>
           </div>
         </div>
 
