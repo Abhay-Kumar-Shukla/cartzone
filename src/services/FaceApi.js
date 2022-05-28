@@ -1,7 +1,7 @@
 import { data } from "autoprefixer";
 import axios from "axios";
 const baseURL = "https://facerecengage.cognitiveservices.azure.com/";
-const subscriptionKey = "11b98d4f78d8451891796b422bcd3d1a";
+const subscriptionKey = "5b79ba0bb0304460993244188127b26d";
 const faceAttributes = "age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise";
 const detectionModel = "detection_01"; //*
 
