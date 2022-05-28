@@ -1,0 +1,74 @@
+.delivery__add {
+  height: 50vh;
+  margin-top: 2rem;
+
+  background: white;
+}
+.delivery__add__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delivery__add__container__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.delivery__add__container__desc__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.delivery__add__container__desc__container h1 {
+  text-align: start;
+  font-family: var(--font--poppins);
+  font-size: 2.5rem;
+}
+.delivery__add__container__desc__container p {
+  font-family: var(--font--poppins);
+
+  color: #c7b13f;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+.delivery__add__container__img {
+  background-image: url("../../../Assets/images/Ellipse\ 4.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.delivery__add__container__img img {
+  width: 60%;
+}
+
+@media (max-width: 550px) {
+  .delivery__add {
+    height: fit-content;
+    padding: 10px;
+    margin-top: 0;
+  }
+  .delivery__add__container__img {
+    background-size: 15rem;
+  }
+  .delivery__add__container__img img {
+    width: 110%;
+  }
+  .delivery__add__container__desc__container {
+  }
+  .delivery__add__container__desc__container h1 {
+    font-size: 1rem;
+  }
+  .delivery__add__container__desc__container p {
+    font-size: 0.5rem;
+    text-align: start;
+    margin-top: 10px;
+  }
+  .underline__img {
+    width: 80px;
+  }
+}

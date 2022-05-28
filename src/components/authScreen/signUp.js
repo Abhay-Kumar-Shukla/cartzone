@@ -34,7 +34,7 @@ function Copyright(props) {
     >
       {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Cartzone
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -221,9 +221,9 @@ export default function SignUp() {
                   </Link>
                 </Grid> */}
                 <Grid item>
-                  <Link href="signUp" variant="body2">
+                  {/* <Link href="signUp" variant="body2">
                     {"Don't have an account? Sign Up"}
-                  </Link>
+                  </Link> */}
                 </Grid>
               </Grid>
               <Copyright sx={{ mt: 5 }} />

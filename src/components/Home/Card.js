@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 export default function ImgMediaCard(props) {
-  console.log(props.data)
+  // console.log(props.data)
   return (
     <Card sx={{ maxWidth: 200 }}>
       <CardMedia

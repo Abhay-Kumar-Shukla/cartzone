@@ -1,0 +1,12 @@
+.paymentadd {
+}
+.paymentadd_container {
+}
+.paymentadd_container img {
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .paymentadd_container img {
+    height: 100px;
+  }
+}

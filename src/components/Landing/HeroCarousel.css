@@ -1,0 +1,40 @@
+.carousel__img {
+  height: fit-content;
+  padding: 0;
+  border: none !important;
+  height: 100%;
+  position: relative;
+}
+.carousel__img img {
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 200%;
+}
+
+.carousel__slide {
+  height: 40vh;
+  border: none !important;
+}
+.carousel {
+  position: relative;
+  border: none !important;
+}
+@media (max-width: 550px) {
+  .carousel {
+    height: 25vh;
+  }
+
+  .carousel__img img {
+    height: 110%;
+    object-fit: cover;
+  }
+  .forward__icon__carousel,
+  .backward__icon__carousel {
+    display: none !important;
+  }
+}

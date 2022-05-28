@@ -49,11 +49,10 @@ export default function MenuAppBar() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={() => {window.location.reload()}}
           >
+            <img src="assets/logo.png" style={{ maxHeight: "100px" }} />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Fashons24
-          </Typography>
           {auth1 && (
             <div>
               <IconButton

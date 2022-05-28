@@ -80,6 +80,7 @@ const ImageUrl = (props) => {
       const response = await faceApiForUrl.post(`/face/v1.0/detect`, {
         url: imageurl,
       });
+      console.log(response);
       setData(response.data);
       setOutputImage(true);
     } catch (err) {

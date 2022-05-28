@@ -1,4 +1,4 @@
-import { CircularProgress, Container, Typography } from "@mui/material";
+import { CircularProgress, Container, Typography, Grid } from "@mui/material";
 import {
   collection,
   doc,
@@ -10,11 +10,35 @@ import { useState } from "react";
 import { db } from "../../services/firebase";
 import Card from "./Card";
 import MenuAppBar from "./nav";
+import plist from "./data.json";
+import HeroCarousel from "../Landing/HeroCarousel";
+import FashionAdd from "../ads/FashionAdd";
+
+let udata = null;
+let pdata = null;
+
+Array.prototype.shuffle = function shuffle() {
+  const array = this;
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
 
 export default function Home(props) {
   var userdata = {};
-  const [udata, setudata] = useState(null);
-  const [pdata, setpdata] = useState(null);
+  const [_ud, set_ud] = useState(false);
   getDoc(doc(db, "users", props.user.uid)).then((docs) => {
     userdata = docs.data();
     if (userdata.firstTime) {
@@ -24,32 +48,39 @@ export default function Home(props) {
         }
       );
     }
-    setudata(userdata);
-    console.log(docs.data());
+    udata = userdata;
+    set_ud(true);
+    // console.log(userdata);
+
+    const p = plist
+      .filter(e => e.tags[0] === udata.faceAttributes.gender)
+      .filter(e => {
+        const age = udata.faceAttributes.age;
+        const pAge = e.tags[1];
+
+        return age <= 18 && pAge <= 18 || age > 18 && pAge > 18 && age <= 50 && pAge <= 50 || age > 50 && pAge > 50 && age > 50 && pAge > 50;
+      })
+      ;
+    pdata = p;
   });
 
-  getDocs(collection(db, "products")).then((docdata) => {
-    let d = [];
-    docdata.forEach((doc) => {
-      d.push(doc.data());
-    });
-    setpdata(d);
-  });
-
-  if (udata == null || pdata == null) {
+  if (!_ud) {
     return (
-      <div>
+      <Container maxWidth={ "sx" }>
         <CircularProgress />
-      </div>
+      </Container>
     );
   } else {
     let list = [];
-    pdata.forEach((doc) => {
-      list.push(<Card data={doc} />);
+    pdata.forEach((doc, i) => {
+      list.push(<Card key={i} data={doc} />);
     });
+
     return (
       <div>
         <MenuAppBar />
+
+        <HeroCarousel />
 
         <Container style={{ margin: "20px auto" }}>
           <Typography
@@ -59,7 +90,13 @@ export default function Home(props) {
           >
             Recommended Products
           </Typography>
-          {list}
+
+          <Grid container>
+            {list}
+          </Grid>
+
+          <FashionAdd />
+
           <Typography
             variant="h4"
             style={{
@@ -71,6 +108,10 @@ export default function Home(props) {
           >
             All Products
           </Typography>
+          
+          <Grid container>
+            {plist.shuffle().map((e, i) => <Card key={i} data={e} />)}
+          </Grid>
         </Container>
       </div>
     );

@@ -1,0 +1,31 @@
+.socialmedia__add {
+  height: 60vh;
+  font-family: var(--font--poppins);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialmedia__add__icons {
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5rem;
+}
+.socialmedia__add__icons__yt {
+  color: red;
+}
+.socialmedia__add__icons__fb {
+  color: #4267b2;
+}
+.socialmedia__add__icons__tw {
+  color: #00acee;
+}
+.socialmedia__add__icons__ln {
+  color: #0077b5;
+}
+@media (max-width: 400px) {
+  .socialmedia__add__icons {
+    font-size: 2rem;
+  }
+}
