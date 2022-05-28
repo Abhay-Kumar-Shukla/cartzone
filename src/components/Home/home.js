@@ -115,11 +115,11 @@ export default function Home(props) {
             gutterBottom            
             textAlign={"center"}
           >
-            All Products
+            More Products
           </Typography>
           
-          <Grid container spacing={2} sx={{ overflowX: "auto", flexWrap: "nowrap", paddingBottom: "2rem" }}>
-            {plist.shuffle().map((e, i) => <Grid item key={i}><Card data={e} /></Grid>)}
+          <Grid container spacing={2} sx={{ justifyContent: "center", overflowX: "auto", paddingBottom: "2rem" }}>
+            {plist.shuffle().slice(0, 8).map((e, i) => <Grid item key={i}><Card data={e} /></Grid>)}
           </Grid>
         </Container>
 
