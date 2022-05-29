@@ -79,7 +79,7 @@ export default function Home(props) {
   } else {
     //display recommended list of products
     let list = [];
-    pdata.forEach((doc, i) => {
+    pdata.shuffle().forEach((doc, i) => {
       list.push(<Grid item key={i}><Card data={doc} /></Grid>);
     });
 //main page layout

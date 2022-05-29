@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Cartzone
+
+Microsoft Engage 2022 : Three problem statements were given out of which making an application by using facial reorganization was more  appeasing  to me so I chose to make “CartZone” an application which recommends products according to facial attributes of user ,and to get personalized service as per their requirement and their interests from first visit only. I am still working for the improvement and better working of the application.
+
+## Running instructions with images
+
+Landing page
+![Landing page](docs/1.png)
+New Registration(signup)
+![Landing page](docs/2.png)
+Camera permission
+![Landing page](docs/3.png)
+Camera preview
+![Landing page](docs/4.png)
+Capture and submit
+![Landing page](docs/5.png)
+Home page
+![Landing page](docs/6.png)
+![Landing page](docs/7.png)
+Contact us
+![Landing page](docs/8.png)
+Navbar and logout
+![Landing page](docs/9.png)
+login page
+![Landing page](docs/10.png)
+home page
+![Landing page](docs/11.png)
+Product discription 
+![Landing page](docs/12.png)
+Purchased
+![Landing page](docs/13.png)
+my account
+![Landing page](docs/14.png)
+for personnalised product for mates feature
+![Landing page](docs/15.png)
+products
+![Landing page](docs/17.png)
+logout
+![Landing page](docs/18.png)
+![Landing page](docs/19.png)
+
+
+## Features
+1. This application is designed to give product suggestion to users according to their facial Specifications.
+2. It gives personalized product suggestion in first visit which makes user free from hactic job of filling forms for intrest or wait for the engine to read the intrest or requierements ;
+
+
+## RoadMap
+|  Week  |            Task Completed           |
+|:------:|:-----------------------------------:|
+| week 1 | 1.Research to  decide project       |
+|        | 2.searched for resources            |
+| week 2 | 1.selected one project              |
+|        | 2.compared and selected Techstack   |
+|        | 3.Setup API                         |
+| week 3 | 1.Completed all pages and connected |
+|        | 2.Setup Recommendations             |
+|        | 3.completed design                  |
+________________________________________________
+
+
+
+## Technologies used
+1. React JS - a free and open-source front-end JavaScript library for building user interfaces or UI components. Maintained by Facebook React is used to develop single page progressive web apps
+2. Firebase – A cloud-hosted Realtime NoSQL database used to store and sync data between users in Realtime. Also used to authenticate and manage users.
+3. Microsoft Azure face API- The Azure Face service provides AI algorithms that detect, recognize, and analyze human faces in images. Facial recognition software is important in many different scenarios, such as identity verification, touchless access control, and face blurring for privacy.
+
+## If you want to build on your system
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Run `npm install` (Requires [Node.js](https://nodejs.org/en/)) to install dependencies.
 
-In the project directory, you can run:
+Run `npm start` to run. It runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm start`
+The page will reload when you make changes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run `npm run build` to build. Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
